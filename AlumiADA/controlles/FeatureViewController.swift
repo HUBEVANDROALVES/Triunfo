@@ -8,6 +8,7 @@
 import UIKit
 
 class FeatureViewController: UIViewController, UICollectionViewDataSource {
+    
     let popularMovies = Movie.popularMovies()
     let nowPlayingMovies = Movie.nowPlayingMovies()
     
@@ -23,9 +24,9 @@ class FeatureViewController: UIViewController, UICollectionViewDataSource {
         popularCollectionview.delegate = self
         nowplayngCollectionview.delegate = self            
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
+                
         if let destination = segue.destination as? DetaillsViewController {
             let movie = sender as? Movie
             destination.movie = movie
