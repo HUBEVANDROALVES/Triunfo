@@ -112,28 +112,23 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cGS-ZC-bqf" userLabel="Now Playing stack View">
                                                 <rect key="frame" x="0.0" y="206" width="521" height="421"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-VL-pag" userLabel="ViewNowplayng">
+                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-VL-pag" userLabel="ViewNowplayng">
                                                         <rect key="frame" x="0.0" y="0.0" width="521" height="71"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-pq-Ey1">
-                                                                <rect key="frame" x="16" y="0.0" width="1293" height="71"/>
+                                                                <rect key="frame" x="16" y="0.0" width="489" height="71"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Now playing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="63.5" id="6AY-yb-Uw0">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="1233" height="71"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <color key="backgroundColor" red="0.0" green="0.68332057820000003" blue="0.88266581629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-ZK-NX9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="421" height="71"/>
+                                                                        <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mm-sJ-x7b">
-                                                                        <rect key="frame" x="1234" y="0.0" width="59" height="71"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG9-6A-t4L">
+                                                                        <rect key="frame" x="422" y="0.0" width="67" height="71"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="se All" cornerStyle="fixed">
-                                                                            <backgroundConfiguration key="background">
-                                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                                            </backgroundConfiguration>
-                                                                        </buttonConfiguration>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.8980392157" green="0.83137254900000002" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -225,7 +220,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="XYd-rw-nMo">
                                                                 <rect key="frame" x="16" y="0.0" width="489" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="720" text="Upcoming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-0x-a6d">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="720" text="Upcoming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="430" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-0x-a6d">
                                                                         <rect key="frame" x="0.0" y="0.0" width="429" height="50"/>
                                                                         <color key="backgroundColor" systemColor="linkColor"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -266,7 +261,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4gp-eL-NbX">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcomingCell" id="4gp-eL-NbX" customClass="UpcomingCollectionViewCell" customModule="AlumiADA" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="37.5" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bnj-iw-UyA">
@@ -308,6 +303,11 @@
                                                                         <constraint firstItem="2ZY-5L-vEN" firstAttribute="top" secondItem="bnj-iw-UyA" secondAttribute="top" constant="8" id="raG-QQ-MAy"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outletCollection property="imagem" destination="2ZY-5L-vEN" collectionClass="NSMutableArray" id="0ZB-iF-mdS"/>
+                                                                    <outletCollection property="titleLabe" destination="gc9-II-geA" collectionClass="NSMutableArray" id="Bfh-8S-3E0"/>
+                                                                    <outletCollection property="dateLabel" destination="Lvf-dZ-6vp" collectionClass="NSMutableArray" id="3ZZ-zu-SQ3"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>

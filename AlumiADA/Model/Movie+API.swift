@@ -8,7 +8,99 @@
 import Foundation
 
 extension Movie {
-
+    
+    // mark: -m-dowload de populares
+    
+    static let urlComponets = URLComponents( string:"https://api.themoviedb.org/")!
+    
+    static func popularMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponets
+        components.path = "/3/movie/popular"
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+        ]
+        
+        let session = URLSession.shared
+        
+        do {
+            let (data,response) = try await session.data(from: components.url!)
+            
+            let  decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let  movieResult = try decoder.decode(MoviesResponse.self, from:  data)
+            
+            return movieResult.results
+        } catch {
+            print (error)
+        }
+        return []
+    }
+    static func nowplayingMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponets
+        components.path = "/3/movie/now_playing"
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+        ]
+        
+        let session = URLSession.shared
+        
+        do {
+            let (data,response) = try await session.data(from: components.url!)
+            
+            let  decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let  movieResult = try decoder.decode(MoviesResponse.self, from:  data)
+            
+            return movieResult.results
+        } catch {
+            print (error)
+        }
+        return []
+    }
+    static func upcomingMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponets
+        components.path = "/3/movie/upcoming"
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+        ]
+        
+        let session = URLSession.shared
+        
+        do {
+            let (data,response) = try await session.data(from: components.url!)
+            
+            let  decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let  movieResult = try decoder.decode(MoviesResponse.self, from:  data)
+            
+            return movieResult.results
+        } catch {
+            print (error)
+        }
+        return []
+    }
+    // MARK: DOWLOAD DE IMAGENS
+    
+    static func downloadImageData(wintPath: String) async -> Data {
+        let urlString = "https://image.tmdb.org/t/p/w780\(wintPath)"
+        let url: URL = URL(string: urlString)!
+        
+        let session = URLSession.shared
+        
+        do {
+            let (data, response) = try await session.data(from: url)
+            return data
+            
+        }catch{
+            print (error)
+        }
+        
+        return Data()
+    }
+     
     // MARK: - Recuperando a chave da API de um arquivo
     static var apiKey: String {
         guard let url = Bundle.main.url(forResource: "TMDB-Info", withExtension: "plist") else {
@@ -23,4 +115,6 @@ extension Movie {
         return key
     }
 }
+
+
 

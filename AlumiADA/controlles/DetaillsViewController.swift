@@ -19,19 +19,22 @@ class DetaillsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
      //   print(movie)
-        
         guard let movie = movie else {
             return
         }
-
         self.title = movie.title
-        backdroopImage.image = UIImage(named: movie.backdrop)
+        
+        Task {
+            let imageData = await Movie.downloadImageData(wintPath: movie.backdropPath)
+            let imagem = UIImage(data: imageData) ??  UIImage()
+            self .backdroopImage.image = imagem       //UIImage(named: movie.backdropPath)
+            
+        }
+            
         titleLabel.text = movie.title
-        posterImage.image = UIImage(named: movie.poster)
+        posterImage.image = UIImage(named: movie.posterPath)
         ratingLabel.text = "Rating \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
     }

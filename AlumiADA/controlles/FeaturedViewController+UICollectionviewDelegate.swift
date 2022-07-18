@@ -15,10 +15,10 @@ extension FeatureViewController: UICollectionViewDelegate {
         
         
         if collectionView == popularCollectionview {
-            print (popularMovies[indexPath.item])
+                   //   print (popularMovies[indexPath.item])
             movie = popularMovies[indexPath.item]
         } else {
-            print(nowPlayingMovies[indexPath.item])
+                 //      print(nowPlayingMovies[indexPath.item])
             movie = nowPlayingMovies[indexPath.item]
             }
         self.performSegue(withIdentifier: "DetaillsSegue", sender: movie)
