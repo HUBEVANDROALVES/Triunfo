@@ -21,27 +21,28 @@
                                 <rect key="frame" x="0.0" y="140" width="521" height="1160"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kV5-fS-E7q" userLabel="All Stack Views">
-                                        <rect key="frame" x="0.0" y="0.0" width="521" height="1067"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="521" height="1108.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3k1-Ng-8U4" userLabel="Popular Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="521" height="198"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="521" height="239.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyM-wu-hIS" userLabel="ViewPopular">
-                                                        <rect key="frame" x="0.0" y="0.0" width="521" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="521" height="91.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TVR-Z2-CKw">
-                                                                <rect key="frame" x="16" y="0.0" width="489" height="50"/>
+                                                                <rect key="frame" x="16" y="0.0" width="489" height="91.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Popular" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="139.5" translatesAutoresizingMaskIntoConstraints="NO" id="kQN-xW-213">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="429" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="429" height="91.5"/>
                                                                         <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="28"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="tintColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                                                        <color key="textColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="highlightedColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QQ-PL-kA5">
-                                                                        <rect key="frame" x="430" y="0.0" width="59" height="50"/>
+                                                                        <rect key="frame" x="430" y="0.0" width="59" height="91.5"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <inset key="contentEdgeInsets" minX="16" minY="13" maxX="0.0" maxY="0.0"/>
@@ -49,9 +50,9 @@
                                                                         <buttonConfiguration key="configuration" style="plain" title="se All">
                                                                             <backgroundConfiguration key="background">
                                                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <color key="strokeColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                                                <color key="strokeColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                                             </backgroundConfiguration>
-                                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
@@ -68,7 +69,7 @@
                                                         </constraints>
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vyO-tz-YYz" userLabel="Collection View Popular">
-                                                        <rect key="frame" x="0.0" y="58" width="521" height="140"/>
+                                                        <rect key="frame" x="0.0" y="99.5" width="521" height="140"/>
                                                         <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="140" id="mSH-Ek-L6L"/>
@@ -88,11 +89,11 @@
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2sA-Je-b46">
-                                                                            <rect key="frame" x="8" y="8" width="184" height="100.5"/>
+                                                                            <rect key="frame" x="8" y="8" width="184" height="102"/>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPf-PF-NGB">
-                                                                            <rect key="frame" x="8" y="112.5" width="184" height="19.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                            <rect key="frame" x="8" y="114" width="184" height="18"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -115,10 +116,11 @@
                                                         </cells>
                                                     </collectionView>
                                                 </subviews>
+                                                <color key="backgroundColor" red="0.94901960784313721" green="0.43137254901960786" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cGS-ZC-bqf" userLabel="Now Playing stack View">
-                                                <rect key="frame" x="0.0" y="206" width="521" height="421"/>
+                                                <rect key="frame" x="0.0" y="247.5" width="521" height="421"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-VL-pag" userLabel="ViewNowplayng">
                                                         <rect key="frame" x="0.0" y="0.0" width="521" height="71"/>
@@ -126,18 +128,23 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-pq-Ey1">
                                                                 <rect key="frame" x="16" y="0.0" width="489" height="71"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-ZK-NX9">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Now Playing " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-ZK-NX9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="421" height="71"/>
                                                                         <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="highlightedColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="tintColor" red="0.94901960780000005" green="0.66666666669999997" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                                                        <color key="textColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="highlightedColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG9-6A-t4L">
                                                                         <rect key="frame" x="422" y="0.0" width="67" height="71"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="Button">
-                                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <backgroundConfiguration key="background">
+                                                                                <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </backgroundConfiguration>
+                                                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
@@ -224,7 +231,7 @@
                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.43137254901960786" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Znd-qa-oP3" userLabel="Upcoming Stack View">
-                                                <rect key="frame" x="0.0" y="635" width="521" height="432"/>
+                                                <rect key="frame" x="0.0" y="676.5" width="521" height="432"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ie5-Wo-rHv" userLabel="ViewUpcoming">
                                                         <rect key="frame" x="0.0" y="0.0" width="521" height="50"/>
@@ -235,18 +242,17 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="720" text="Upcoming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="430" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-0x-a6d">
                                                                         <rect key="frame" x="0.0" y="0.0" width="429" height="50"/>
                                                                         <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <nil key="highlightedColor"/>
+                                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                                                        <color key="textColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="highlightedColor" red="0.94901960780000005" green="0.66666666669999997" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTs-WU-SHE">
                                                                         <rect key="frame" x="430" y="0.0" width="59" height="50"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="se All">
-                                                                            <backgroundConfiguration key="background">
-                                                                                <color key="backgroundColor" red="0.14901960784313725" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            </backgroundConfiguration>
-                                                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <backgroundConfiguration key="background"/>
+                                                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
@@ -587,8 +593,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
