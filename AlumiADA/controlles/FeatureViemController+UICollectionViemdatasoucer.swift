@@ -12,6 +12,9 @@ extension FeatureViewController: UICollectionViewDataSource {
             return popularMovies.count
         } else if collectionView == nowplayngCollectionview {
             return nowPlayingMovies.count
+        }else if collectionView == upcomingCollectionview {
+            return upcomingMovies.count
+            
         } else {
             return 0
         }
@@ -24,6 +27,8 @@ extension FeatureViewController: UICollectionViewDataSource {
             return makePopularCell(indexPath)
         } else if collectionView == nowplayngCollectionview {
             return makeNowPlayingCell(indexPath)
+        } else if collectionView == upcomingCollectionview {
+            return makeUpcomingcell(indexPath)
         }
         
         return UICollectionViewCell()

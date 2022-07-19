@@ -32,6 +32,11 @@ class DetaillsViewController: UIViewController {
             self .backdroopImage.image = imagem       //UIImage(named: movie.backdropPath)
             
         }
+        Task {
+            let imageData = await Movie.downloadImageData(wintPath: movie.posterPath)
+            let imagem = UIImage(data: imageData) ?? UIImage()
+            self.posterImage.image = imagem
+        }
             
         titleLabel.text = movie.title
         posterImage.image = UIImage(named: movie.posterPath)
