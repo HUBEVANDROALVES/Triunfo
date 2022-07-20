@@ -28,6 +28,8 @@ class FeatureViewController: UIViewController { //} UICollectionViewDataSource {
         nowplayngCollectionview.delegate = self
         upcomingCollectionview.delegate = self
         
+        sleep(2)
+        
         Task {
         
             self.popularMovies = await Movie.popularMoviesAPI()
