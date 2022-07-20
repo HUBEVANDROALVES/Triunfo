@@ -556,11 +556,11 @@
             </objects>
             <point key="canvasLocation" x="-5286" y="-427"/>
         </scene>
-        <!--Featured-->
+        <!--AlumiADA -->
         <scene sceneID="gwu-DZ-4Qo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H1X-dj-mYH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Featured" image="film" catalog="system" selectedImage="film.fill" id="rTj-0e-Ryy">
+                    <tabBarItem key="tabBarItem" title="AlumiADA " image="film" catalog="system" selectedImage="film.fill" id="rTj-0e-Ryy">
                         <color key="badgeColor" red="0.94901960780000005" green="0.43137254899999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -580,7 +580,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8Z-ll-8or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4125" y="-427"/>
+            <point key="canvasLocation" x="-4338" y="-441"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JSn-mc-m5g">
